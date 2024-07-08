@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 id="current"></h2>
+      <div id="countdown" class="hidden"></div>
+      <div id="quiz-container" class="hidden">
+        <div id="question-container"></div>
+        <div class="buttons">
+          <button id="prev-button" class="button" style="display: none">
+            წინა
+          </button>
+          <button id="next-button" class="button">შემდეგი</button>
+        </div>
+      </div>
+      <div id="result-container" class="hidden">
+        <h2 id="result"></h2>
+        <h3 id="total"></h3>
+      </div>
+      <button id="start-button" class="button">ქვიზის დაწყება</button>
+      <div id="timer"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
