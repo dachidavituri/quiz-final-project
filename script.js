@@ -170,7 +170,6 @@ function saveAnswer() {
   const selectedOption = document.querySelector('input[name="option"]:checked');
   const currentQuestion = questions[currentQuestionIndex];
 
-  
   if (currentQuestion.selected !== null) {
     if (currentQuestion.selected === currentQuestion.correct) {
       correctAnswers -= 1;
@@ -179,7 +178,7 @@ function saveAnswer() {
     }
   }
 
-  // Update current selected answer
+  
   if (selectedOption !== null) {
     const selectedAnswer = parseInt(selectedOption.value);
     currentQuestion.selected = selectedAnswer;
